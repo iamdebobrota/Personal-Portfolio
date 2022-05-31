@@ -1,0 +1,132 @@
+.portfolio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* height: 70vh; */
+  margin-top: 5rem;
+  padding-top:4rem;
+  /* padding-bottom:4rem; */
+  /* margin-bottom: 30px; */
+  height: auto;
+
+}
+
+.port_span {
+  color: var(--black);
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+
+.po{
+  color: var(--crimson) !important;
+}
+
+
+
+.grid_project{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  width: 1000px;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 5rem;
+}
+.pr_child{
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+transition: all 1s;
+  border-radius: 15px;
+  padding: 18px;
+}
+.pr_child:hover{
+  box-shadow: rgba(136, 165, 191, 0.744) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+transform: scale(1.001);
+}
+.project_img{
+  height: 170px;
+  width: 280px;
+  border-radius: 15px;
+  transition: all 2s;
+}
+.project_img:hover{
+  transform: scale(1.07);
+
+}
+
+.pr_title{
+  text-align: center;
+  color: var(--crimson);
+  font-size: 18px;
+}
+.pr_desc{
+  font-size: 12px;
+
+}
+.desc{
+  height: 95px;
+}
+.tech{
+  color: var(--crimson);
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 4px;
+}
+.pr_flex{
+  display: flex;
+justify-content: space-around;
+margin-top: 15px;
+box-sizing: border-box;
+}
+.pr_flex svg:hover{
+transform: scale(1.1);
+}
+
+
+
+@media screen and (max-width: 600px) {
+  .portfolio {
+width: 100%;
+padding: 8px;
+text-align: center;
+  }
+  .grid_project{
+grid-template-columns: repeat(1, 1fr);
+width: 300px;
+
+
+  }
+
+}
+
+@media (min-width: 601px) and (max-width:1020px) {
+  .portfolio {
+width: 100%;
+padding: 8px;
+text-align: center;
+  }
+  .grid_project{
+grid-template-columns: repeat(2, 1fr);
+width: 90%;
+  }
+.pr_child{
+  height: 430px;
+}
+}
+
+
+/* @media (min-width: 701px) and (max-width:900px) {
+
+  .portfolio {
+    width: 100%;
+    padding: 8px;
+      }
+      .grid_project{
+    grid-template-columns: repeat(3, 1fr);
+    width: 90%;
+      }
+    .pr_child{
+      height: 430px;
+    }
+
+} */
