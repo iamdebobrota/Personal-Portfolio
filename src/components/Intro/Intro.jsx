@@ -4,7 +4,7 @@ import me from "../../img/me.png";
 import Github from "../../img/github.png";
 import LinkedIn from "../../img/linkedin.png";
 import { themeContext } from "../../Context";
-// import Resume from './resume.pdf';
+import Resume from './resume.pdf';
 import { Typewriter } from "react-simple-typewriter"
 import SmoothList from 'react-smooth-list';
 
@@ -39,9 +39,9 @@ const Intro = () => {
           </h2>
         </div>
 
-        {/* <a href={Resume} download className="resum">
+        <a href={Resume} download className="resum">
           <button className="resume">Resume</button>
-        </a> */}
+        </a>
 
         <div className="i-icons">
           <a href="https://github.com/iamdebobrota" target="_blank" rel="noopener noreferrer">

@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import "./Services.css";
 import { themeContext } from "../../Context";
 import Svg1 from "./Svg";
-import Resume from './resume.pdf';
+// import Resume from './resume.pdf';
 
 
 
@@ -43,10 +43,10 @@ const Services = () => {
             <br />
 
           </ul>
-          
+{/*           
         <a href={Resume} download className="resum">
           <button className="resume">Resume</button>
-        </a>
+        </a> */}
 
         </div>
 
