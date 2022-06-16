@@ -13,7 +13,10 @@ import mongodb from '../../img/mongodb.svg'
 import git from '../../img/git.svg'
 import npm from '../../img/npm.svg'
 import database from '../../img/database.png'
-import cypress from '../../img/cypress.webp'
+import cypress from '../../img/cypress.webp';
+// import mongoose from '../../img/mongoose.png';
+import postman from '../../img/postman.png';
+
 
 export const skill=[
 {
@@ -80,6 +83,10 @@ export const skill=[
     'img':cypress,
     'title':"Cypress"
 },
+{
+    'img':postman,
+    'title':"Postman"
+}
 
 
 

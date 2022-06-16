@@ -1,15 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
 .Intro {
   display: flex;
-
   z-index: -1;
-  /* border: 2px solid red; */
-  /* padding: 0 3rem 0 3rem; */
-  /* padding-left: 7rem; */
   width: 1000px;
   margin: auto;
   margin-top: 4rem;
   padding-top: 5rem;
+
+
 }
 
 /* left side styling */
@@ -67,7 +65,12 @@
   font-size: 20px;
 font-weight: 600;
 transition: 0.7s;
+animation-delay: 1.5s;
 }
+.resume.anim{
+  animation-delay: 2.5s;
+}
+
 .resume:hover{
   background-color: rgba(255, 255, 255, 0);
   color: #ff1361;
@@ -102,6 +105,25 @@ transition: 0.7s;
   object-fit: cover;
   transition: all 2s;
   cursor: pointer;
+animation-delay: 2.5s;
+}
+.my_img.anim{
+  animation-delay: 1.5s;
+  transition: 2s;
+}
+.anim{
+  opacity: 0;
+  transform: translateY(70px);
+animation: moveup 1.5s linear forwards;
+}
+
+
+
+@keyframes moveup {
+  100%{
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
 .my_img:hover{
 
@@ -243,16 +265,18 @@ margin: auto;
 }
 .helo{
   font-size: 22px;
+  animation-delay: 0.5s;
 }
 .i-name{
   margin: auto;
 }
 .name{
   font-size: 2.5rem;
- 
+  animation-delay: 0.5s;
 }
 .full_stack{
   font-size: 22px;
+  animation-delay: 15s;
 }
 .resum{
   margin: auto;
@@ -261,6 +285,8 @@ margin: auto;
   margin: auto;
 }
 }
+
+
 
 @media screen and (max-width: 950px) {
 

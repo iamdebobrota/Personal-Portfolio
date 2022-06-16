@@ -91,12 +91,12 @@ color: black;
   top: 0;
   /* left: -20px; */
   right: 0;
-  width: 50%;
-  /* height: 100%; */
+  width: 60%;
+  height: 100%;
   padding-top: 20px;
   padding-bottom: 100%;
-  background-color: rgba(15, 187, 255, 0.826);
-  
+  background-color: rgb(3, 137, 255);
+  border-radius: 12px;
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -112,9 +112,9 @@ color: black;
 }
 .hide_name{
   color: crimson;
-  text-shadow: 1px 1px 3px crimson;
+  text-shadow: 1px 1px 3px rgba(220, 20, 60, 0.433);
   transition: 0.3s;
-
+font-weight: 600;
 }
 ul .active{
   transition: 0.2s;

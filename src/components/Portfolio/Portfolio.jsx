@@ -1,16 +1,24 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import "./Portfolio.css";
 import "swiper/css";
 import { themeContext } from "../../Context";
 import {project} from './project'
 
 
+import Aos from "aos";
+import 'aos/dist/aos.css';
 
 const Portfolio = () => {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
+
+  useEffect(()=>{
+    Aos.init({duration: 2000 });
+  }, []);
+
+
   return (
-    <div className="portfolio" id="portfolio">
+    <div className="portfolio" id="portfolio"  data-aos="fade-right" >
       {/* heading */}
       <span style={{color: darkMode?'white': ''}} className='port_span'>My Creative  <span className="po"> Project  </span>Section</span>
 
@@ -18,7 +26,7 @@ const Portfolio = () => {
 
 {
   project.map((item, index)=>(
-    <div className="pr_child" key={index}>
+    <div className="pr_child" key={index} data-aos="slide-up"  data-aos-duration="5000" data-aos-delay="600">
 <img src={item.img} alt="a" className="project_img" />
 <h3 className="pr_title">{item.title}</h3>
 <p className="pr_desc desc">{item.desc}</p>

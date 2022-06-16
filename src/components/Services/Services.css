@@ -2,15 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap'); */
 
 .services {
-  /* padding: 0 3rem 0 3rem; */
-/* padding-left: 5rem;
-padding-right: 5rem; */
-  /* display: flex; */
+
   z-index: -1;
   margin-top: 4rem;
   padding-top:6rem;
-  /* border: 2px solid red; */
  text-align: center;
+ transition-delay: 0.5s;
 }
 .svg:hover{
 transform: scaleX(1.2);
@@ -19,7 +16,6 @@ transform: scaleX(1.2);
   width: 1000px;
   margin: auto;
   display: flex;
-  /* justify-content: space-between; */
   gap: 30px;
 }
 /* left side */

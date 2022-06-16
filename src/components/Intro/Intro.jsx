@@ -25,22 +25,22 @@ const Intro = () => {
         <div className="i-name ">
           <span style={{ color: darkMode ? "white" : "" }}>
             <div style={{ fontSize: "27px" }}>
-              <h3 style={{ fontSize: "27px" }} className='helo'>Hello, my name is</h3>
+              <h3 style={{ fontSize: "27px" }} className='helo anim'>Hello, my name is</h3>
             </div>
 
           </span>
 
-          <span className="animate-charcte name">Debobrota Haldar</span>
-          <h2 className="full_stack_h2">
+          <span className="animate-charcte name anim">Debobrota Haldar</span>
+          <h2 className="full_stack_h2 anim">
             I'm a
-            <span className="full_stack">
-              <Typewriter words={[" Full Stack Developer.", " Developer."]} loop cursor cursorStyle='|' typeSpeed={70} deleteSpeed={50} delaySpeed={1000} />
+            <span className="full_stack anim">
+              <Typewriter words={[" Full Stack Web Developer.", " Web Developer."]} loop cursor cursorStyle='|' typeSpeed={70} deleteSpeed={50} delaySpeed={1000} />
             </span>
           </h2>
         </div>
 
-        <a href={Resume} download className="resum">
-          <button className="resume">Resume</button>
+        <a href={Resume} download className="resum anim">
+          <button className="resume shadow-lg shadow-cyan-500/50">Resume</button>
         </a>
 
         <div className="i-icons">
@@ -54,7 +54,7 @@ const Intro = () => {
       </div>
     
       <div className="i-right">
-        <img src={me} alt="me" className="my_img" />
+        <img src={me} alt="me" className="my_img anim" />
       </div>
     </div>
     </SmoothList>

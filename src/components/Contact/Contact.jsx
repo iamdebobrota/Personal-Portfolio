@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import "./Contact.css";
 // import emailjs from "@emailjs/browser";
 import { themeContext } from "../../Context";
@@ -13,17 +13,27 @@ import { useForm, ValidationError } from '@formspree/react';
 import { CgMail } from 'react-icons/cg';
 import { BsLinkedin } from 'react-icons/bs';
 
+import Aos from "aos";
+import 'aos/dist/aos.css';
 
 const Contact = () => {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
+
+  
+  useEffect(()=>{
+    Aos.init({duration: 2000 });
+  }, []);
+
+
+
   // const form = useRef();
   // const [done, setDone] = useState(false)
 
 
   const [state, handleSubmit] = useForm("xwkyadvj");
   if (state.succeeded) {
-    return <p>Thanks for joining!</p>;
+    return <p data-aos="flip-right"  data-aos-duration="5000">Thanks for joining!</p>;
   }
 
   // const sendEmail = (e) => {
@@ -48,8 +58,12 @@ const Contact = () => {
   //     );
   // };
 
+
+
+
   return (
-    <div className="contact_main" style={{ color: darkMode ? 'white' : '' }} id="contact">
+    <div className="contact_main" style={{ color: darkMode ? 'white' : '' }} 
+    id="contact"   data-aos-duration="5000" data-aos-delay="500"  >
       <div className="heding_cont">
       <span style={{ color: darkMode ? 'white' : '' }} className='get_touch'>Get in Touch
         <span className="contact"> Contact </span> me</span>
@@ -58,9 +72,9 @@ const Contact = () => {
 
 
 
-        <img src={contact} alt="msg" className="massge_img" />
+        <img src={contact} alt="msg" className="massge_img" data-aos="slide-left" />
 
-      <div className="contact-form" >
+      <div className="contact-form" data-aos="slide-right">
 
         <div className="c-right">
           
@@ -185,7 +199,8 @@ export function ContactForm() {
         field="message"
         errors={state.errors}
       />
-      <button type="submit" disabled={state.submitting} className="button_su">
+      <button type="submit" disabled={state.submitting} data-aos="zoom-in-up" 
+       className="button_su bg-green-500 ">
         Submit
       </button>
     </form>

@@ -1,5 +1,5 @@
 // import React, { useContext } from "react";
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import Toggle from "../Toggle/Toggle";
 import "./Navbar.css";
 import { Link } from "react-scroll";
@@ -10,6 +10,8 @@ import { GoThreeBars } from 'react-icons/go';
 import { RiCloseCircleFill } from 'react-icons/ri';
 
 
+import Aos from "aos";
+import 'aos/dist/aos.css';
 
 
 const Navbar = () => {
@@ -22,13 +24,20 @@ const Navbar = () => {
 
   // style={{ color: darkMode ? "white" : "" }}
 
+
+  useEffect(()=>{
+    Aos.init({duration: 2000 });
+  }, []);
+
+
+
   return (
     <div className="Nav-main" style={{ color: darkMode ? "white" : "" }}>
 
       <div className="n-wrapper" id="Navbar" style={{ color: darkMode ? "white" : "" , backgroundColor: darkMode ? "#0f1624" : "white" }}>
         <div className="n-left" style={{color: darkMode ? "white" : "", backgroundColor: darkMode ? "#0f1624" : "white" }}>
         <Link to="intro" spy={true} smooth={true} className='list'>
-          <img src={D1} alt="d" className="n-name" />
+          <img src={D1} alt="d" className="n-name"  data-aos="slide-left"/>
           </Link>
           <Toggle className='toggle' />
  
@@ -84,8 +93,8 @@ const Navbar = () => {
   <RiCloseCircleFill onClick={()=>{setNav(!nav)
   // console.log(nav)
 }  
-} style={{marginLeft:"0px", cursor:"pointer"}}/>
-<h5 className="hide_name">Debobrota</h5>
+} style={{marginLeft:"0px", cursor:"pointer", top:"0"}}/>
+<h5 className="hide_name animate-bounce ">Debobrota</h5>
               <li>
                 <Link activeClass="active" to="intro" spy={true} smooth={true} className='list'>
                   Home

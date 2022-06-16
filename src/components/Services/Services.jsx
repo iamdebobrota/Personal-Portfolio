@@ -1,7 +1,10 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import "./Services.css";
 import { themeContext } from "../../Context";
 import Svg1 from "./Svg";
+
+import Aos from "aos";
+import 'aos/dist/aos.css';
 // import Resume from './resume.pdf';
 
 
@@ -17,13 +20,19 @@ const Services = () => {
   //   type: "spring",
   // };
 
+
+  useEffect(()=>{
+    Aos.init({duration: 2000 });
+  }, []);
+
+  
   return (
 
-    <div className="services" id="services">
-      <span style={{ color: darkMode ? "white" : "" }} className='about_me'> All <span className="me">About</span> Me</span>
-      <div className="grid_about">
-        <div className="awesome">
-          <ul className='about_article'>
+    <div className="services" id="services"data-aos-duration="5000" data-aos-delay="600"   >
+      <span style={{ color: darkMode ? "white" : "" }} className='about_me anim' data-aos="flip-left"> All <span  data-aos="flip-left" className="me">About</span> Me</span>
+      <div className="grid_about "  >
+        <div className="awesome "  data-aos="slide-right" >
+          <ul className='about_article anim'  >
             <li>
               Hello! My name Debobrota Haldar and I enjoy creating things that live on the internet.
             </li>
@@ -57,7 +66,7 @@ const Services = () => {
         ></div> */}
 
 
-        <Svg1 className='svg' />
+        <Svg1 className='svg' data-aos="slide-left" />
       </div>
     </div>
 
