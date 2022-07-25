@@ -1,11 +1,7 @@
 import React, { useContext, useEffect } from "react";
 import "./Contact.css";
-// import emailjs from "@emailjs/browser";
 import { themeContext } from "../../Context";
 import contact from '../../img/contact.svg'
-// import linkedin from '../../img/linkedin.png'
-// import github from '../../img/github.svg';
-// import gmail from '../../img/gmail.png';
 import { BsFillTelephoneFill } from 'react-icons/bs';
 import { HiOutlineMail } from 'react-icons/hi';
 import { BsGithub } from 'react-icons/bs';
@@ -22,7 +18,7 @@ const Contact = () => {
 
   
   useEffect(()=>{
-    Aos.init({duration: 2000 });
+    Aos.init({duration: 1500 });
   }, []);
 
 
@@ -33,7 +29,7 @@ const Contact = () => {
 
   const [state, handleSubmit] = useForm("xwkyadvj");
   if (state.succeeded) {
-    return <p data-aos="flip-right"  data-aos-duration="5000">Thanks for joining!</p>;
+    return <p data-aos="flip-right"  data-aos-duration="4000">Thanks for joining!</p>;
   }
 
   // const sendEmail = (e) => {

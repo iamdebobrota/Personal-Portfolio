@@ -11,12 +11,12 @@ const Experience = () => {
   const darkMode = theme.state.darkMode;
 
   useEffect(()=>{
-    Aos.init({duration: 2000 });
+    Aos.init({duration: 1500 });
   }, []);
 
 
   return (
-    <div className="experience" id='experience'  data-aos="flip-up"  data-aos-duration="6000" data-aos-delay="700">
+    <div className="experience" id='experience'  data-aos="flip-up"  data-aos-duration="4000" data-aos-delay="300">
       {/* <div className="achievement">
       
         <div className="circle" style={{color: darkMode?'var(--orange)':''}}>0</div>

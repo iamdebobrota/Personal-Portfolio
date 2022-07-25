@@ -107,7 +107,7 @@ animation-delay: 1.5s;
   cursor: pointer;
 animation-delay: 2.5s;
 }
-.my_img.anim{
+.anim{
   animation-delay: 1.5s;
   transition: 2s;
 }

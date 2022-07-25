@@ -13,7 +13,7 @@ const Portfolio = () => {
   const darkMode = theme.state.darkMode;
 
   useEffect(()=>{
-    Aos.init({duration: 2000 });
+    Aos.init({duration: 1500 });
   }, []);
 
 
@@ -26,7 +26,7 @@ const Portfolio = () => {
 
 {
   project.map((item, index)=>(
-    <div className="pr_child" key={index} data-aos="slide-up"  data-aos-duration="5000" data-aos-delay="600">
+    <div className="pr_child" key={index} data-aos="slide-up"  data-aos-duration="4000" data-aos-delay="300">
 <img src={item.img} alt="a" className="project_img" />
 <h3 className="pr_title">{item.title}</h3>
 <p className="pr_desc desc">{item.desc}</p>

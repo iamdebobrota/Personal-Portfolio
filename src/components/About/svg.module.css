@@ -1,0 +1,16 @@
+.svgimg{
+    margin-top: 60px;
+transition: all 3s;
+}
+.svgimg:hover{
+    transform:scaleY(1.1);
+}
+
+@media screen and (max-width: 500px) {
+.svgimg{
+    margin: auto;
+    width: 97%;
+    padding-top: 2rem;
+}
+}
+

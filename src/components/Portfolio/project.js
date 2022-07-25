@@ -2,6 +2,15 @@
 
 
 export const project= [
+    {
+        'img':'https://camo.githubusercontent.com/7c498fafc397ed8efeba8131d351e7a857801294cb8e7894523d0c4cf75a2324/68747470733a2f2f7062732e7477696d672e636f6d2f6d656469612f46544377476943586f41497a396c643f666f726d61743d6a7067266e616d653d6c61726765',
+        'title':'Modesens-Clone',
+        'desc':'ModeSens is your digital shopping assistant for the smart and informed. Established in 2015, ModeSens is led by a team of industry experts who developed a solution to the disconnected and crowded online shopping experience.',
+           'tech':'React, Nodejs, express, Mongodb, CSS, JAVASCRIPT',
+           'git': 'https://github.com/iamdebobrota/Modesens-clone',
+           'deploy':'https://modesensclone.netlify.app/',
+           'linkdin':'https://www.linkedin.com/posts/debobrota-haldar-3340651aa_react-projects-clonewebsite-activity-6944287080311046144--Jjm?utm_source=linkedin_share&utm_medium=member_desktop_web'
+        },
     
     {
         'img':'https://camo.githubusercontent.com/7c498fafc397ed8efeba8131d351e7a857801294cb8e7894523d0c4cf75a2324/68747470733a2f2f7062732e7477696d672e636f6d2f6d656469612f46544377476943586f41497a396c643f666f726d61743d6a7067266e616d653d6c61726765',
@@ -30,7 +39,6 @@ export const project= [
    'deploy':'https://elated-shaw-64a95c.netlify.app/',
    'linkdin':'https://www.linkedin.com/posts/debobrota-haldar-3340651aa_masaischool-activity-6904121643187212288-JPKR?utm_source=linkedin_share&utm_medium=member_desktop_web'
 },
-
     {
 'img':'https://pbs.twimg.com/media/FUPaNdcXsAEzY1B?format=jpg&name=small',
 'title':'Task List - Typescript',
