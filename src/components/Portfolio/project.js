@@ -3,13 +3,22 @@
 
 export const project= [
     {
-        'img':'https://camo.githubusercontent.com/7c498fafc397ed8efeba8131d351e7a857801294cb8e7894523d0c4cf75a2324/68747470733a2f2f7062732e7477696d672e636f6d2f6d656469612f46544377476943586f41497a396c643f666f726d61743d6a7067266e616d653d6c61726765',
+        'img':'https://github.com/iamdebobrota/Modesens-clone/raw/main/Screenshots/ProductsPage.png',
         'title':'Modesens-Clone',
         'desc':'ModeSens is your digital shopping assistant for the smart and informed. Established in 2015, ModeSens is led by a team of industry experts who developed a solution to the disconnected and crowded online shopping experience.',
            'tech':'React, Nodejs, express, Mongodb, CSS, JAVASCRIPT',
            'git': 'https://github.com/iamdebobrota/Modesens-clone',
            'deploy':'https://modesensclone.netlify.app/',
            'linkdin':'https://www.linkedin.com/posts/debobrota-haldar-3340651aa_react-projects-clonewebsite-activity-6944287080311046144--Jjm?utm_source=linkedin_share&utm_medium=member_desktop_web'
+        },
+    {
+        'img':'https://github.com/iamdebobrota/decisive-duck-1364/raw/main/screenshots/timecamp1.png',
+        'title':'Timecamp-Clone',
+        'desc':'TimeCamp is a web-based application launched in 2009 by Kamil Rudnicki, a programmer and founder of Time Solutions, to track the activity of computer users and it is dedicated either to freelancers or teams.',
+           'tech':'React, Nodejs, express, Mongodb, CSS, scss, tailwind',
+           'git': 'https://github.com/iamdebobrota/decisive-duck-1364',
+           'deploy':'https://timecamp.vercel.app/',
+           'linkdin':'https://www.linkedin.com/posts/debobrota-haldar-3340651aa_masaischool-coding-dsa-activity-6957414924985794560-sY0Q?utm_source=linkedin_share&utm_medium=member_desktop_web'
         },
     
     {
