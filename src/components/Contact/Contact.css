@@ -1,15 +1,9 @@
 
 .contact_main{
     text-align: center;
- 
     padding-top:4rem;
-    /* width: 1000px; */
     margin: auto;
-    /* padding-left: 2rem; */
-    margin-top: 8rem;
- 
-  
-    
+    margin-top: 8rem;  
 }
 .contact_flex{
 display: flex;
@@ -21,13 +15,10 @@ margin: auto;
 }
 .con_img{
     display: flex;
-    /* gap: 20px; */
     justify-content: center;
  
 }
 .con_img a{
-    /* height: 40px; */
-    /* width: 150px; */
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 6px;
     padding: 6px;
@@ -109,7 +100,7 @@ form
 {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
   text-align: left;
 
 }

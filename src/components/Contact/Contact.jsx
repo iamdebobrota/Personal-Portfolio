@@ -22,39 +22,10 @@ const Contact = () => {
   }, []);
 
 
-
-  // const form = useRef();
-  // const [done, setDone] = useState(false)
-
-
   const [state, handleSubmit] = useForm("xwkyadvj");
   if (state.succeeded) {
     return <p data-aos="flip-right"  data-aos-duration="4000">Thanks for joining!</p>;
   }
-
-  // const sendEmail = (e) => {
-  //   e.preventDefault();
-
-  //   emailjs
-  //     .sendForm(
-  //       "service_gugqc0e",
-  //       "template_m5udu2c",
-  //       form.current,
-  //       "VLwg1ltOWvnCYAiK_"
-  //     )
-  //     .then(
-  //       (result) => {
-  //         console.log(result.text);
-  //         setDone(true);
-  //         form.reset();
-  //       },
-  //       (error) => {
-  //         console.log(error.text);
-  //       }
-  //     );
-  // };
-
-
 
 
   return (
@@ -110,35 +81,6 @@ const Contact = () => {
 
           </div>
 
-          {/* <input type="text" className="user" name="Email" id="email" placeholder="Name"/>
-     
-
-          <input className="user" placeholder="Email"
-            id="email"
-            type="email" 
-            name="email"
-            />
-          <ValidationError 
-        prefix="Email" 
-        field="email"
-        errors={state.errors}
-      />
-
-          <textarea className="user" placeholder="Message"  id="message" name="message"/>
-     
-          <ValidationError 
-        prefix="Message" 
-        field="message"
-        errors={state.errors}
-      />
-          <submit value="Send" className="button_s" type="submit" disabled={state.submitting}>Send</submit>
-          <span>{done && "Thanks for Contacting me"}</span>
-          <div
-            className="blur c-blur1"
-            style={{ background: "var(--purple)" }}
-          ></div> */}
-          {/* </form> */}
-
           <div
             className="blur c-blur1"
             style={{ background: "var(--purple)" }}
@@ -169,7 +111,8 @@ export function ContactForm() {
       {/* <label htmlFor="email">
         Email Address
       </label> */}
-      {/* <input type="text" className="user" name="Email" id="email" placeholder="Name"/>*/}
+      <input type="text" className="user" 
+      name="name" id="name" placeholder="Name"/>
 
       <input
         id="email"
