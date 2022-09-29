@@ -14,13 +14,6 @@ const Services = () => {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
 
-  // transition
-  // const transition = {
-  //   duration: 3,
-  //   type: "spring",
-  // };
-
-
   useEffect(()=>{
     Aos.init({duration: 2000 });
   }, []);
@@ -52,18 +45,8 @@ const Services = () => {
             <br />
 
           </ul>
-{/*           
-        <a href={Resume} download className="resum">
-          <button className="resume">Resume</button>
-        </a> */}
 
         </div>
-
-
-        {/* <div
-          className="blur s-blur2"
-          style={{ background: "var(--purple)" }}
-        ></div> */}
 
 
         <Svg1 className='svg' data-aos="slide-left" />
