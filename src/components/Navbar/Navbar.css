@@ -82,39 +82,42 @@ color: black;
 .new_hide{
   display: none;
   transition: 0.5s;
-  
 }
-.Show_li{
 
+
+.Show_li{
   position: absolute;
   /* position: fixed; */
   top: 0;
   /* left: -20px; */
   right: 0;
-  width: 60%;
-  height: 100%;
-  padding-top: 20px;
-  padding-bottom: 100%;
-  background-color: rgb(3, 137, 255);
-  border-radius: 12px;
+  width: 50%;
+  height: 80%;
+  background-color: rgb(35, 43, 50);
+  border-radius: 5px;
   display: flex;
   flex-direction: column;
   justify-content: start;
   align-items: center;
   font-size: 35px;
   list-style: none;
-
-
   position: fixed;
   z-index: 1;
   overflow-x: hidden;
   transition: 5s;
+  animation-name: example;
+  animation-duration: 2s;
+}
+@keyframes example {
+  0%   {right:-80%; top:0px;}
+  25%  {right:1; top:0px;}
+
 }
 .hide_name{
   color: crimson;
-  text-shadow: 1px 1px 3px rgba(220, 20, 60, 0.433);
   transition: 0.3s;
 font-weight: 600;
+font-size: large;
 }
 ul .active{
   transition: 0.2s;
@@ -122,43 +125,7 @@ ul .active{
 font-weight: 700 !important;
 }
 
-/* @media screen and (max-width: 980px) {
-.Nav-main{
-  width: 98%;
-}
-  .n-name{
-    height: 100px;
-    margin-left: -60px;
-  }
-  .toggle{
-    margin-left: -85px;
-margin-right: 10px;
-  }
-  .n-left{ */
-    /* width: 95%; */
-    /* display: flex;
-    justify-content: space-around; */
-  /* }
-  .n-right{
-    margin: 0;
-    padding: 0;
-display: flex;
 
-  }
-
-.n-list >ul{
-  gap: 30px;
-  margin-left: -20px;
-}
-.n-button{
-margin-left: -50px;
-}
-
-
-
-
-
-} */
 @media screen and (max-width: 1024px) {
 
   .Nav-main{
