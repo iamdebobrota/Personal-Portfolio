@@ -23,26 +23,23 @@
   margin-bottom: -2rem;
 }
 .c-button {
-    background: #FFFFFF;
-    box-shadow: 0px 19px 60px rgba(0, 0, 0, 0.08);
-    border-radius: 7px;
-    border: none;
-    padding: 10px;
-    font-size: 16px;
-    color: #5290FD;
+  background: #ffffff;
+  box-shadow: 0px 19px 60px rgba(0, 0, 0, 0.08);
+  border-radius: 7px;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  color: #5290fd;
 }
 
-.c-button:hover{
-    transform: scale(1.1);
-    cursor: pointer;
+.c-button:hover {
+  transform: scale(1.1);
+  cursor: pointer;
 }
 /* cards */
 
-
-
-
-@media screen and (max-width: 480px){
-  .card{
+@media screen and (max-width: 480px) {
+  .card {
     width: auto;
   }
 }

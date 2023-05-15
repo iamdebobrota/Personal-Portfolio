@@ -17,17 +17,8 @@ const Contact = () => {
   const darkMode = theme.state.darkMode;
 
   useEffect(() => {
-    Aos.init({ duration: 1500 });
+    Aos.init({ duration: 1200 });
   }, []);
-
-  const [state, handleSubmit] = useForm("xwkyadvj");
-  if (state.succeeded) {
-    return (
-      <p data-aos="flip-right" data-aos-duration="4000">
-        Thanks for joining!
-      </p>
-    );
-  }
 
   return (
     <div
@@ -65,8 +56,6 @@ const Contact = () => {
               <p>https://github.com/iamdebobrota</p>
             </div>
 
-            {/* <form ref={form} onSubmit={handleSubmit} action="https://formspree.io/f/xwkyadvj" method="POST"> */}
-
             <div className="con_img">
               <a
                 href="https://www.linkedin.com/in/debobrota-haldar-3340651aa/"
@@ -74,7 +63,7 @@ const Contact = () => {
                 rel="noopener noreferrer"
                 className="linkdin">
                 <BsLinkedin />
-               <p>LinkedIn</p> 
+                <p>LinkedIn</p>
               </a>
               <a
                 href="https://github.com/iamdebobrota"
@@ -82,7 +71,7 @@ const Contact = () => {
                 rel="noopener noreferrer"
                 className="git_con">
                 <BsGithub />
-               <p>GitHub</p> 
+                <p>GitHub</p>
               </a>
               <a
                 href="https://github.com/iamdebobrota"
@@ -90,14 +79,9 @@ const Contact = () => {
                 rel="noopener noreferrer"
                 className="git_con gmail">
                 <CgMail />
-               <p>Gmail</p> 
+                <p>Gmail</p>
               </a>
             </div>
-
-            <div
-              className="blur c-blur1"
-              style={{ background: "var(--purple)" }}></div>
-
             <ContactForm />
           </div>
         </div>
@@ -119,7 +103,7 @@ export function ContactForm() {
     <form onSubmit={handleSubmit} className="form">
       <input
         type="text"
-        className="user w-full"
+        className="user w-full "
         name="name"
         id="name"
         placeholder="Name"
@@ -136,15 +120,15 @@ export function ContactForm() {
       <textarea
         id="message"
         name="message"
-        className="user w-full"
+        className="user w-full "
         placeholder="Messages"
       />
       <ValidationError prefix="Message" field="message" errors={state.errors} />
       <button
         type="submit"
         disabled={state.submitting}
-        data-aos="zoom-in-up"
-        className="button_su bg-red-600">
+        data-aos="flip-up"
+        className="button_su bg-red-600 hover:cursor-pointer">
         Submit
       </button>
     </form>

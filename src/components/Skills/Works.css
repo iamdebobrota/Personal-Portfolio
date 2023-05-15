@@ -1,0 +1,120 @@
+.main_div {
+  text-align: center;
+  width: 100%;
+  margin: auto;
+  margin-top: 3rem;
+  padding-top: 6rem;
+  padding-bottom: 5rem;
+}
+.works {
+  display: flex;
+  height: auto;
+  justify-content: center;
+  margin-top: 4rem;
+}
+.awesome {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.skills {
+  color: var(--crimson);
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.awesome > :nth-child(3) {
+  color: var(--gray);
+  font-size: 14px;
+  margin-top: 1rem;
+}
+.s-button {
+  width: 150px;
+  height: auto;
+}
+.hire_me_main {
+  width: 120px;
+  height: 70px;
+  margin: auto;
+  margin-top: 2rem;
+}
+.w-right {
+  position: relative;
+  left: 9rem;
+  width: 300px !important;
+}
+
+.w-mainCircle {
+  position: relative;
+  width: 15rem;
+  border-radius: 100%;
+  box-shadow: var(--smboxShadow);
+  background: white;
+  z-index: 2;
+}
+.w-mainCircle > * {
+  position: absolute;
+}
+.w-mainCircle > :nth-child(1) {
+  top: -2rem;
+  left: 6rem;
+}
+.w-mainCircle > :nth-child(2) {
+  left: -2rem;
+  top: 5rem;
+}
+.w-mainCircle > :nth-child(3) {
+  left: 6rem;
+  top: 5rem;
+}
+.w-mainCircle > :nth-child(4) {
+  left: 13rem;
+  top: 5rem;
+}
+.w-mainCircle > :nth-child(5) {
+  left: 6rem;
+  top: 11.5rem;
+}
+.w-secCircle {
+  width: 5rem;
+  height: 5rem;
+  position: absolute;
+  border-radius: 100%;
+  border: 5px solid #ebebeb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: "none";
+  box-shadow: var(--smboxShadow);
+  background: white;
+  margin-left: -15px;
+}
+
+.w-secCircle > img {
+  transform: scale(0.5);
+}
+
+.w-backCircle {
+  position: absolute;
+  height: 13rem;
+  width: 13rem;
+  border-radius: 100%;
+  z-index: 1;
+}
+.blueCircle {
+  background: #1949b8;
+  left: 6rem;
+  top: 0rem;
+  height: 200px;
+  width: 200px;
+}
+.yellowCircle {
+  background: #f5c32c;
+  left: 6rem;
+  top: 5rem;
+  height: 200px;
+  width: 200px;
+}
