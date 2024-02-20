@@ -76,7 +76,7 @@ const Navbar = () => {
                 <button
                   onClick={() =>
                     window.open(
-                      "https://drive.google.com/file/d/1iipXOGQncc15wUiJiPC44fWnpApTTBiu/view?usp=sharing"
+                      "https://drive.google.com/file/d/1iipXOGQncc15wUiJiPC44fWnpApTTBiu/view?usp=drive_link"
                     )
                   }
                   className="rounded-3xl bg-red-500 p-1 pl-3 pr-3  text-white hover:text-red-500 hover:bg-white hover:border-x-2 hover:border-red-500">
