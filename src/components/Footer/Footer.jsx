@@ -1,7 +1,6 @@
 import React from "react";
 import "./Footer.css";
 import Wave2 from "../../img/wave2.png";
-import linkedin from "../../img/linkedin.png";
 
 const Footer = () => {
   return (

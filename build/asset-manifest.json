@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/static/css/main.765bb0dd.css",
-    "main.js": "/static/js/main.3a6a1ef1.js",
+    "main.css": "/static/css/main.17e7ee05.css",
+    "main.js": "/static/js/main.17c2386f.js",
     "static/media/timecamp.png": "/static/media/timecamp.4dd98446f5dff71dd62f.png",
     "static/media/modesens.png": "/static/media/modesens.3d0637011d2605461e86.png",
     "static/media/me.png": "/static/media/me.246d05b10e0aabfd9339.png",
-    "static/media/Debobrota_haldar_resume.pdf": "/static/media/Debobrota_haldar_resume.0b8dd381b36468212059.pdf",
+    "static/media/Debobrota_haldar_resume.pdf": "/static/media/Debobrota_haldar_resume.b8e96e7e6bb014dc32ff.pdf",
     "static/media/groww.png": "/static/media/groww.a969a15ff5925ee4a633.png",
     "static/media/chakra.png": "/static/media/chakra.15320604467d004df871.png",
     "static/media/wave2.png": "/static/media/wave2.bf5c2da41eadeb1dea2a.png",
@@ -29,11 +29,11 @@
     "static/media/materialui.svg": "/static/media/materialui.87264df237ee700ba78bb58ff701a6d3.svg",
     "static/media/circle.svg": "/static/media/circle.5627b84e3e421ff98551.svg",
     "static/media/npm.svg": "/static/media/npm.87689eab730642c86d2b01f3ef4a19e3.svg",
-    "main.765bb0dd.css.map": "/static/css/main.765bb0dd.css.map",
-    "main.3a6a1ef1.js.map": "/static/js/main.3a6a1ef1.js.map"
+    "main.17e7ee05.css.map": "/static/css/main.17e7ee05.css.map",
+    "main.17c2386f.js.map": "/static/js/main.17c2386f.js.map"
   },
   "entrypoints": [
-    "static/css/main.765bb0dd.css",
-    "static/js/main.3a6a1ef1.js"
+    "static/css/main.17e7ee05.css",
+    "static/js/main.17c2386f.js"
   ]
 }
