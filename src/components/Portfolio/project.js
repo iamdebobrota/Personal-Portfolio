@@ -25,7 +25,7 @@ export const project = [
   },
 
   {
-    img: "https://private-user-images.githubusercontent.com/99647439/307574246-deb413ad-a50f-41b4-a610-ccfb1da2c757.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDg4NDY2MDUsIm5iZiI6MTcwODg0NjMwNSwicGF0aCI6Ii85OTY0NzQzOS8zMDc1NzQyNDYtZGViNDEzYWQtYTUwZi00MWI0LWE2MTAtY2NmYjFkYTJjNzU3LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDAyMjUlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwMjI1VDA3MzE0NVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTlkZWQ3ZWNmMDdiY2MwYTA2YzQ3YTA1MjdiYzE4YWYwMmRhMjZmMjEyZTNmYjE2NGNiYTY3NDRmNDZkZGY5YzgmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.WO6MghTE5U0sk6IChNaoTEnfBY3gFEHrSmz13idD4fw",
+    img: "https://i.imgur.com/hbo99Ut.png",
     title: "Kindmeal Clone",
     desc: "This project is about reading blogs about recipes, and restaurants, or you can find restaurants, If you are a restaurant owner, you can add their restaurants also. These projects we created at end of unit 4 in contract week. we apply filtering, sorting, search, and adding functionality.",
     tech: "React,Bootstrap, CSS, JAVASCRIPT, NodeJS",
