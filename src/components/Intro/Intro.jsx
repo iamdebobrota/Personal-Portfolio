@@ -7,6 +7,7 @@ import { themeContext } from "../../Context";
 import Resume from "./Debobrota_haldar_resume.pdf";
 import { Typewriter } from "react-simple-typewriter";
 import SmoothList from "react-smooth-list";
+import {HiDownload} from "react-icons/hi"
 
 const Intro = () => {
   // Transition
@@ -51,14 +52,15 @@ const Intro = () => {
                 "https://drive.google.com/file/d/1Qer-lZNmSkChsNX6hAn94ylyP_PSJHbs/view?usp=sharing"
               )
             }
-            className="resum anim rounded-3xl bg-red-500 p-1 pl-3 pr-3  text-white hover:text-red-500 hover:bg-white hover:border-x-4 hover:border-red-500">
+            className="resum rounded-sm flex bg-red-500 p-1 pl-3 pr-3  text-white hover:text-red-500 hover:bg-white animate-bounce hover:border-x-2 hover:border-red-500">
             <a
               href={Resume}
               download={"Debobrota_haldar_resume"}
               rel="noreferrer"
-              target="_blank">
-              Resume
+              target="_blank" className="pr-0">
+              Resume 
             </a>
+              <HiDownload/>
           </button>
 
           <div className="i-icons">
@@ -78,7 +80,7 @@ const Intro = () => {
         </div>
 
         <div className="i-right">
-          <img src={me} alt="me" className="my_img anim" />
+          <img src={me} alt="me" draggable="false" className="my_img anim" />
         </div>
       </div>
     </SmoothList>

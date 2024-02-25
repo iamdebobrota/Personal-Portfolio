@@ -7,7 +7,7 @@ import Resume from "../Intro/Debobrota_haldar_resume.pdf";
 
 import { themeContext } from "../../Context";
 import { GoThreeBars } from "react-icons/go";
-import { RiCloseCircleFill } from "react-icons/ri";
+import { IoClose } from "react-icons/io5";
 
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -79,7 +79,7 @@ const Navbar = () => {
                       "https://drive.google.com/file/d/1iipXOGQncc15wUiJiPC44fWnpApTTBiu/view?usp=drive_link"
                     )
                   }
-                  className="rounded-3xl bg-red-500 p-1 pl-3 pr-3  text-white hover:text-red-500 hover:bg-white hover:border-x-2 hover:border-red-500">
+                  className="resume-btn rounded-3xl bg-red-500 p-1 pl-3 pr-3  text-white hover:text-red-500 hover:bg-white transition-all border-x-2 border-red-500 hover:border-x-2 hover:border-red-500">
                   <a
                     href={Resume}
                     download={"Debobrota_haldar_resume"}
@@ -96,21 +96,26 @@ const Navbar = () => {
             <GoThreeBars
               onClick={() => {
                 setNav(!nav);
-                // console.log(nav)
               }}
               style={{ transition: "2s", cursor: "pointer" }}
             />
           </div>
 
-          <ul className={!nav ? "new_hide" : "Show_li"}>
-            <RiCloseCircleFill
+          <ul
+          
+          // className={!nav ? "new_hide" : "Show_li"}
+          className={`w-[70%] text-[34px] top-0 right-0 dark:bg-gray-400 p-5 fixed h-full z-40 ease-in-out duration-500 ${
+            nav ? "show_li translate-x-0 " : "nav_hide translate-x-full"
+          }`}
+
+          
+          >
+            <IoClose
               onClick={() => {
                 setNav(!nav);
-                // console.log(nav)
               }}
-              style={{ marginLeft: "0px", cursor: "pointer", top: "0" }}
+              style={{ marginLeft: "-10px", cursor: "pointer", top: "0" }}
             />
-            <h5 className="hide_name animate-bounce ">Debobrota</h5>
             <li>
               <Link
                 activeclass="active"
@@ -136,21 +141,14 @@ const Navbar = () => {
                 Projects
               </Link>
             </li>
-            {/* <li>
-              <Link to="testimonial" spy={true} smooth={true} className='list'>
-                Blogs
-              </Link>
-            </li> */}
             <li>
               <Link to="contact" spy={true} smooth={true} className="list">
                 Contact
               </Link>
             </li>
-          </ul>
 
-          {/* <Link to="contact" spy={true} smooth={true}>
-        <p className="button n-button">Contact</p>
-        </Link> */}
+              <p className="text-xs text-center mt-32">Created by Debobrota</p>
+          </ul>
         </div>
       </div>
     </div>

@@ -8,19 +8,23 @@
 }
 .skill_child {
   padding: 20px;
-  /* border: 3px solid red; */
   border-radius: 12px;
   background-color: var(--gray);
   margin: auto;
   align-items: center;
+  cursor: pointer;
 }
 .grid_img {
   height: 80px;
   width: 80px;
+  aspect-ratio: 3/2;
+  object-fit: contain;
 }
+
 .skill_child:hover {
   background-color: #edf2f800;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: 0.02s;
 }
 @media screen and (max-width: 285px) {
   .grid {

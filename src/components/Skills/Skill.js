@@ -33,6 +33,10 @@ export const skill = [
     title: "React",
   },
   {
+    img: "https://cdn.worldvectorlogo.com/logos/next-js.svg",
+    title: "Next JS",
+  },
+  {
     img: redux,
     title: "Redux",
   },

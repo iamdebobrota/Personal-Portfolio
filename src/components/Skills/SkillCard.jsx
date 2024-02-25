@@ -19,7 +19,7 @@ const SkillCard = () => {
           data-aos="slide-left"
           data-aos-duration="5000"
           data-aos-delay="300">
-          <img src={item.img} alt="a" className="grid_img" />
+          <img src={item.img} alt="a" className="grid_img" draggable="false" />
           <p>{item.title}</p>
         </div>
       ))}

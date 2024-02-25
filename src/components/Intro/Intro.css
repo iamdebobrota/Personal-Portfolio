@@ -58,8 +58,8 @@
   border: 3px solid #dc143c;
   font-size: 20px;
   font-weight: 600;
-  transition: 0.7s;
-  animation-delay: 1.5s;
+  transition: 0.0001s;
+  animation-delay: 0.5s;
 }
 .resume.anim {
   animation-delay: 0.5s;
@@ -77,7 +77,7 @@
   gap: 0rem;
 }
 .i-icons img {
-  height: 90px;
+  height: 60px;
 }
 
 .i-icons > * {
@@ -86,23 +86,24 @@
 }
 .i-icons > *:hover {
   cursor: pointer;
-  transform: scale(0.7);
+  transform: scale(0.6);
 }
 
 .my_img {
   height: 250px;
   width: 250px;
-  /* border-radius: 50%; */
   margin-top: -30px;
   margin-left: -5px;
   object-fit: cover;
   transition: all 2s;
   cursor: pointer;
   animation-delay: 2.5s;
+  position: relative;
 }
+
 .anim {
   animation-delay: 1.5s;
-  transition: 2s;
+  transition: 0.2s;
 }
 .anim {
   opacity: 0;
@@ -115,9 +116,6 @@
     opacity: 1;
     transform: translateY(0px);
   }
-}
-.my_img:hover {
-  transform: scale(1.1);
 }
 .i-right {
   background-image: url("../../img/circle.svg");
@@ -132,19 +130,12 @@
 
 .i-right > * {
   position: absolute;
-  /* z-index: -1; */
 }
-/* .i-right > :nth-child(1) {
-  transform: scale(0.69);
-  left: -15%;
-  top: -8%;
-} */
+
 .i-right:hover {
-  transform: scale(0.9);
+  transform: scale(1.03);
 }
 .bottom-floting {
-  /* width: 500px;
-  height: 200px; */
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
