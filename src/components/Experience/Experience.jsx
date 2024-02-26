@@ -18,13 +18,13 @@ const Experience = () => {
       className="experience"
       id="experience"
       data-aos="flip-up"
-      data-aos-duration="4000"
-      data-aos-delay="300">
+      data-aos-duration="1000"
+      data-aos-delay="50">
       <div className="achievement">
         <div
           className="circle"
           style={{ color: darkMode ? "var(--orange)" : "" }}>
-          20+
+          40+
         </div>
         <span style={{ color: darkMode ? "white" : "" }}>completed </span>
         <span>Projects</span>

@@ -2,29 +2,31 @@
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: auto;
-  gap: 40px;
+  gap: 30px;
   margin: auto;
   justify-content: center;
 }
 .skill_child {
-  padding: 20px;
+  padding: 12px;
   border-radius: 12px;
   background-color: var(--gray);
   margin: auto;
   align-items: center;
   cursor: pointer;
+  transition: all 0.2s;
 }
 .grid_img {
-  height: 80px;
+  height: 50px;
   width: 80px;
   aspect-ratio: 3/2;
   object-fit: contain;
 }
-
+.grid_img + p{
+  margin-top: 8px;
+}
 .skill_child:hover {
   background-color: #edf2f800;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  transition: 0.02s;
 }
 @media screen and (max-width: 285px) {
   .grid {

@@ -53,6 +53,10 @@ export const skill = [
     title: "Materialui",
   },
   {
+    img: "https://i.imgur.com/8xILRKD.png",
+    title: "Tailwind CSS",
+  },
+  {
     img: nodejs,
     title: "NodeJs",
   },
