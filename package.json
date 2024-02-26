@@ -22,7 +22,7 @@
     "react-scroll": "^1.8.6",
     "react-simple-typewriter": "^3.0.1",
     "react-smooth-list": "^1.0.2",
-    "styled-components": "^5.3.5",
+    "styled-components": "^5.3.11",
     "swiper": "^8.0.7",
     "web-vitals": "^2.1.0"
   },
